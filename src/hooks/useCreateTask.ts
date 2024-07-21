@@ -60,8 +60,8 @@ export function useCreateTask(onOpenChange: () => void) {
         from: today(getLocalTimeZone()),
         to: today(getLocalTimeZone()).add({ days: 1 }),
         description: '',
-        priority: priorities[0]?.value,
-        status: statuses[0]?.value,
+        priority: priorities[0]?.label,
+        status: statuses[0]?.label,
       })
     },
     onError: (error) => {
