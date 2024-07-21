@@ -12,6 +12,6 @@
    ```
 
 ## Структура проекта
-![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![Image alt](https://github.com/task_for_junior/blob/main/src/assets/directories.png)
 
 
