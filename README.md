@@ -14,4 +14,6 @@
 ## Структура проекта
 ![directories](https://github.com/rustam18-dev/task_for_junior/blob/main/src/assets/directories.png){:width="300px" height="200px"}
 
-<img src="[https://example.com/your-image.png](https://github.com/rustam18-dev/task_for_junior/blob/main/src/assets/directories.png)" alt="directories" height="200">
+<img src="https://github.com/rustam18-dev/task_for_junior/blob/main/src/assets/directories.png" alt="directories" height="200">
+
+https://i.imgur.com/1OxJjIC.png
