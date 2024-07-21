@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npm run server && vite",
+    "dev": "concurrently \"npm run server\" \"npm start\"",
+    "start": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "json-server -w ./db.json"
+    "server": "json-server -w ./db.json --port=3001"
   },
   "dependencies": {
     "@internationalized/date": "^3.5.4",
@@ -19,6 +20,7 @@
     "@nextui-org/theme": "^2.2.9",
     "@tanstack/react-query": "^5.51.11",
     "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
     "framer-motion": "^11.3.8",
     "json-server": "^1.0.0-beta.1",
     "lucide": "^0.412.0",
