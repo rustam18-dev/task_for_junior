@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import {Autocomplete, AutocompleteItem, Button, DatePicker, Input, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Textarea} from "@nextui-org/react"
 import {getLocalTimeZone, today} from "@internationalized/date"
 import {priorities, statuses} from "../../data.ts"

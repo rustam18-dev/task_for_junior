@@ -33,7 +33,6 @@ export function useCreateTask(onOpenChange: () => void) {
     } else if (name === 'to' && value && newTask.from && value < newTask.from) {
       return toast('Дата "Конец" не может быть раньше даты "Начало".')
     } else {
-      console.log(value)
       setNewTask(prev => ({ ...prev, [name]: value }))
     }
   }
@@ -76,7 +75,7 @@ export function useCreateTask(onOpenChange: () => void) {
 
     const formError = validateForm()
 
-    if (formError === null) return
+    if (formError !== null) return
 
     const from = `${newTask.from?.day}.${newTask.from?.month}.${newTask.from?.year}`
     const to = `${newTask.to?.day}.${newTask.to?.month}.${newTask.to?.year}`
@@ -86,8 +85,6 @@ export function useCreateTask(onOpenChange: () => void) {
       from,
       to,
     }
-
-    console.log(body)
 
     mutation.mutate(body)
   }
